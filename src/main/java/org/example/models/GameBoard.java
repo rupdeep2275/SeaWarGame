@@ -23,12 +23,4 @@ public class GameBoard {
     public Cell[][] getBoard() {
         return board;
     }
-
-    public int getWidth() {
-        return width;
-    }
-
-    public int getHeight() {
-        return height;
-    }
 }

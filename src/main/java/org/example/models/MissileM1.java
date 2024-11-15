@@ -1,9 +1,9 @@
 package org.example.models;
 
-import org.example.strategies.M1Behaviour;
+import org.example.factories.MissileBehaviourFactory;
 
 public class MissileM1 extends Missile {
     public MissileM1() {
-        super("Missile M1", 20, new M1Behaviour());
+        super("M1", 20, MissileBehaviourFactory.getInstance());
     }
 }

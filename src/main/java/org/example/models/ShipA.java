@@ -8,7 +8,7 @@ public class ShipA extends Ship {
     private int missileM2Count = 0;
 
     public ShipA() {
-        super("Ship A", 100, 2, 2); //health: 100, Dimensions: 2x2
+        super("Ship A", 100); //health: 100, Dimensions: 2x2
     }
 
     @Override

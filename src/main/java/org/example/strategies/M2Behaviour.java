@@ -1,7 +1,6 @@
 package org.example.strategies;
 
 import org.example.models.Cell;
-import org.example.models.Player;
 import org.example.models.Ship;
 
 public class M2Behaviour implements MissileBehavior {

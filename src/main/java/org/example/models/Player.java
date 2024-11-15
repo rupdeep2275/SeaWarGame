@@ -18,18 +18,6 @@ public class Player {
         ships.add(ship);
     }
 
-    public List<Ship> getShips() {
-        return ships;
-    }
-
-    public boolean isTurn() {
-        return isTurn;
-    }
-
-    public void setTurn(boolean turn) {
-        isTurn = turn;
-    }
-
     public String getName() {
         return name;
     }

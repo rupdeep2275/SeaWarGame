@@ -8,10 +8,8 @@ public abstract class Ship {
     private String name;
     private int health;
     private List<Missile> armory;
-    private int width;
-    private int height;
 
-    public Ship(String name, int health, int width, int height) {
+    public Ship(String name, int health) {
         this.name = name;
         this.health = health;
         this.armory = new ArrayList<>();

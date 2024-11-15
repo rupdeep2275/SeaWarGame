@@ -99,7 +99,6 @@ public class GameManager {
         }
     }
 
-
     public GameBoard getGameBoard() {
         return gameBoard;
     }

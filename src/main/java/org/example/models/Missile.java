@@ -1,27 +1,20 @@
 package org.example.models;
 
+import org.example.factories.MissileBehaviourFactory;
 import org.example.strategies.MissileBehavior;
 
 public abstract class Missile {
-    private String name;
+    private String type;
     private int damage;
     private MissileBehavior behavior;
 
-    public Missile(String name, int damage, MissileBehavior behavior) {
-        this.name = name;
+    public Missile(String type, int damage, MissileBehaviourFactory missileFactory) {
         this.damage = damage;
-        this.behavior = behavior;
+        this.type = type;
+        this.behavior = missileFactory.createMissileBehaviour(type);
     }
 
     public void executeBehavior(int targetX, int targetY, Cell[][] board) {
         behavior.fire(targetX, targetY, board);
-    }
-
-    public int getDamage() {
-        return damage;
-    }
-
-    public String getName() {
-        return name;
     }
 }
